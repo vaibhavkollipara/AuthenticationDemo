@@ -18,7 +18,8 @@ Environment Setup
 * `python manage.py migrate`
 
 Add email details
-* `Add your gmail account credentials in settings.py file`
+* Add your gmail account credentials in settings.py file
+* Enable your gmail account to connect to less secure apps. <a href="https://support.google.com/accounts/answer/6010255?hl=en">Instructions</a>
 
 Create Admin account
 * `python manage.py createsuperuser`
