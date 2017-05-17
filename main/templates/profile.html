@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row text-center">
+    <div class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+        <h3 class="well">Profile</h3>
+    </div>
+    </div>
+    <div class="row text-center">
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-4 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
+                    <h3>First Name</h3>
+            </div>
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-8 col-md-4 col-lg-4">
+                    <h3 class="pull-left">{{user.first_name}}</h3>
+            </div>
+    </div>
+    <div class="row text-center">
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-4 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
+                    <h3>Last Name</h3>
+            </div>
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-8 col-md-4 col-lg-4">
+                    <h3 class="pull-left">{{user.last_name}}</h3>
+            </div>
+    </div>
+    <div class="row text-center">
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-4 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
+                    <h3>Email</h3>
+            </div>
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-8 col-md-4 col-lg-4">
+                    <h3 class="pull-left">{{user.email}}</h3>
+            </div>
+    </div>
+    <div class="row text-center">
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-4 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-3">
+                    <h3>Username</h3>
+            </div>
+            <div style="color:white;background-color: #547dc4;border-radius: 5px;" class="col-sm-8 col-md-4 col-lg-4">
+                    <h3 class="pull-left">{{user.username}}</h3>
+            </div>
+    </div>
+{% endblock %}

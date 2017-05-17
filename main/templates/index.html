@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <h3 class="well">Login</h3>
+        <form method="post" action="{% url 'main:login'%}">
+                {% csrf_token %}
+                {% include 'form_template.html' with form=loginForm %}
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <div class="row">
+        <h3 class="well">SignUp</h3>
+        <form method="post" action="{% url 'main:signup'%}">
+                {% csrf_token %}
+                {% include 'form_template.html' with form=signupForm %}
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Signup</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+{% endblock %}
