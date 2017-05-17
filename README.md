@@ -27,5 +27,5 @@ Run Server
 * `python manage.py runserver`
 
 ### Screenshots
-<img src="https://github.com/vaibhavkollipara/AuthenticationDemo/blob/master/screens/login.PNG?raw=true" width="200"/><br/>
-<img src="https://github.com/vaibhavkollipara/AuthenticationDemo/blob/master/screens/profile.PNG?raw=true" width="200"/><br/>
+<img src="https://github.com/vaibhavkollipara/AuthenticationDemo/blob/master/screens/login.PNG?raw=true"/><br/>
+<img src="https://github.com/vaibhavkollipara/AuthenticationDemo/blob/master/screens/profile.PNG?raw=true"/><br/>
