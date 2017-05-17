@@ -74,7 +74,7 @@ class Signup(View):
             user.save()
             try:
                 send_mail('Verify Your Email', "Welcome to my website.Please click <a href='http://127.0.0.1:8000/activate/{}'>here</a> to verify your email".format(user.id),
-                          'jack.sparo435@gmail.com',
+                          'youremail@gmail.com',
                           [user.email],
                           fail_silently=False,)
             except:
@@ -93,19 +93,6 @@ class Profile(View):
         if not request.user.is_authenticated():
             return redirect(settings.LOGIN_URL)
         return render(request, 'profile.html', {'user': request.user})
-
-
-def email(request):
-    # try:
-    send_mail('Djano mail',
-              'Hello email from django.',
-              'jack.sparo435@gmail.com',
-              ['jack.sparo435@gmail.com'],
-              fail_silently=False,)
-    # except:
-    #     return HttpResponse("Email Failed to Send")
-
-    return HttpResponse("Email Sent Successfully")
 
 
 def activate(request, id):
